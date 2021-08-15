@@ -40,6 +40,7 @@ document.getElementById('widtdraw-button').addEventListener('click',function(){
         // console.log(widrawAmount)
         const widrawTotal = document.getElementById('widrow-total');
         // console.log(widrawTotal)
+        
         // assign the new value
 
          const totalWidraw = widrawTotal.innerText = widrawAmount;
