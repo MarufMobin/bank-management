@@ -34,18 +34,42 @@ document.getElementById('deposit-button').addEventListener('click',function(){
 
     })
 document.getElementById('widtdraw-button').addEventListener('click',function(){
+
     // catch the input data 
         const widrawInput = document.getElementById('witdraw-input');
-        const widrawAmounttext = widrawInput.value;
+        const witdrawAmountText = widrawInput.value;
+        const witdrawAmount = parseFloat(witdrawAmountText);
+
+        //console.log(witdrawAmount, "This is input")
+
         // console.log(widrawAmount)
-        const widrawTotal = document.getElementById('widrow-total');
-        // console.log(widrawTotal)
-        
+        const witdrawTotalText = document.getElementById('withrow-total');
+        const witdrawTotal = witdrawTotalText.innerText;
+        const witdrawPreDefineAmount = parseFloat(witdrawTotal);
+
+         //console.log(witdrawPreDefineAmount, "This is html amount")
+
         // assign the new value
+        const newWitdrawAmount = witdrawPreDefineAmount + witdrawAmount;
 
-         const totalWidraw = widrawTotal.innerText = widrawAmount;
+        //console.log(newWitdrawAmount,"this is total Amount")
 
-        //totalWidraw = '';
-        console.log(totalWidraw)
+        witdrawTotalText.innerText = newWitdrawAmount;
+
+        // clear withdraw input
+        widrawInput.value = '';
+
+        // update Balance
+
+        const balanceTotal = document.getElementById('balance-total');
+
+        const previousBalanceTotalText = balanceTotal.innerText;
+        const previousBalanceTotal = parseFloat(previousBalanceTotalText);
+
+        const newBalanceTotalForWithdraw = previousBalanceTotal - witdrawAmount;
+        balanceTotal.innerText = newBalanceTotalForWithdraw ;
+        
+
+        
 
     })
