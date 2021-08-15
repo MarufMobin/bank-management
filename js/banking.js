@@ -33,18 +33,18 @@ document.getElementById('deposit-button').addEventListener('click',function(){
         depositInput.value = '';
 
     })
-// document.getElementById('widtdraw-button').addEventListener('click',function(){
-//     // catch the input data 
-//         const widrawInput = document.getElementById('witdraw-input');
-//         const widrawAmounttext = widrawInput.value;
-//         // console.log(widrawAmount)
-//         const widrawTotal = document.getElementById('widrow-total');
-//         // console.log(widrawTotal)
-//         // assign the new value
+document.getElementById('widtdraw-button').addEventListener('click',function(){
+    // catch the input data 
+        const widrawInput = document.getElementById('witdraw-input');
+        const widrawAmounttext = widrawInput.value;
+        // console.log(widrawAmount)
+        const widrawTotal = document.getElementById('widrow-total');
+        // console.log(widrawTotal)
+        // assign the new value
 
-//          const totalWidraw = widrawTotal.innerText = widrawAmount;
+         const totalWidraw = widrawTotal.innerText = widrawAmount;
 
-//         //totalWidraw = '';
-//         console.log(totalWidraw)
+        //totalWidraw = '';
+        console.log(totalWidraw)
 
-//     })
+    })
